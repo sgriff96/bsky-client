@@ -4,9 +4,8 @@ import type { PageLoad } from "./$types";
 export const load: PageLoad = async () => {
 	const agent = await getAgent();
 	const timeline = await agent.getTimeline();
-	
+
 	return {
 		timeline
 	};
 };
-
