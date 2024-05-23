@@ -8,8 +8,8 @@ export const getAgent = async () => {
 	if (!bskyAgent.hasSession) {
 		console.log("Logging in...");
 		await bskyAgent.login({
-			identifier: import.meta.env.USERNAME,
-			password: import.meta.env.PASSWORD,
+			identifier: import.meta.env.VITE_USERNAME,
+			password: import.meta.env.VITE_PASSWORD,
 		});
 	}
 
