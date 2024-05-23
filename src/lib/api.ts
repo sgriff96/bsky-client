@@ -5,7 +5,6 @@ const bskyAgent = new BskyAgent({
 });
 
 export const getAgent = async () => {
-	console.log("hasSession", bskyAgent.hasSession);
 	if (!bskyAgent.hasSession) {
 		console.log("Logging in...");
 		await bskyAgent.login({
