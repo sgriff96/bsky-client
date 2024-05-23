@@ -9,7 +9,7 @@ export const getAgent = async () => {
 		console.log("Logging in...");
 		await bskyAgent.login({
 			identifier: "sgriffin.bsky.social",
-			password: "C8WnuXew-Zutm9j"
+			password: "password"
 		});
 	}
 
