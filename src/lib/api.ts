@@ -8,8 +8,8 @@ export const getAgent = async () => {
 	if (!bskyAgent.hasSession) {
 		console.log("Logging in...");
 		await bskyAgent.login({
-			identifier: "sgriffin.bsky.social",
-			password: "password"
+			identifier: import.meta.env.USERNAME,
+			password: import.meta.env.PASSWORD,
 		});
 	}
 
