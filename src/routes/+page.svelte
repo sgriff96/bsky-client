@@ -5,7 +5,7 @@
 	export let data: PageData;
 </script>
 
-<div class="flex justify-center max-h-1">
+<div>
 	{#if data.timeline.data.feed}
 		<Feed posts={data.timeline.data.feed} />
 	{/if}
