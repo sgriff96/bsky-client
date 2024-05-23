@@ -7,6 +7,20 @@
 	// "features": {},
 	"forwardPorts": [5173],
 	"postCreateCommand": "npm install",
-	// "customizations": {},
+	"customizations": {
+    "vscode": {
+      "extensions": [
+				"svelte.svelte-vscode", 
+				"bradlc.vscode-tailwindcss", 
+				"esbenp.prettier-vscode",
+				"eamodio.gitlens",
+				"dbaeumer.vscode-eslint",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"GitHub.vscode-pull-request-github",
+				"YoavBls.pretty-ts-errors"
+			]
+    }
+  }
 	// "remoteUser": "root"
 }
