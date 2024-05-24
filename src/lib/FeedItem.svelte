@@ -2,6 +2,8 @@
 	import type { PostView } from "@atproto/api/dist/client/types/app/bsky/feed/defs";
 	import * as Card from "$lib/components/ui/card";
 	import * as Avatar from "$lib/components/ui/avatar";
+	import Reply from "lucide-svelte/icons/reply";
+	import { Button } from "$lib/components/ui/button";
 
 	export let post: PostView;
 </script>
@@ -25,4 +27,7 @@
 			<img src={post.embed?.images[0].fullsize} />
 		{/if}
 	</Card.Content>
+	<Card.Footer>
+		<Button variant="outline" size="icon"><Reply class="h-4 w-4" /></Button>
+	</Card.Footer>
 </Card.Root>
